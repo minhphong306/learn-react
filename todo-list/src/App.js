@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Item from './components/item'
 import './App.css';
+import TrafficLight from "./components/traffic-light";
 
 class App extends Component {
     constructor() {
@@ -16,7 +17,13 @@ class App extends Component {
                 {
                     this.items.map((item, index) => <Item key={index} title={item}/>)
                 }
+
+                <div className="App">
+                    <TrafficLight/>
+                </div>
             </div>
+
+
         );
     }
 }
